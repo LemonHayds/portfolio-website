@@ -28,10 +28,10 @@ export const Introduction = () => {
             <div className={"animate__animated animate__fadeIn"}>
               <div className="banner-container" data-aos="zoom-in">
                 <h1>
-                  <Parallax speed={-3}>
+                  <Parallax speed={4}>
                     Lemon <br></br>
                   </Parallax>
-                  <Parallax speed={-4}>
+                  <Parallax speed={3}>
                     <Typewriter
                       words={["Squ"]}
                       loop={1}

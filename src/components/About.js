@@ -39,7 +39,17 @@ export const About = () => {
                   solutions. My diverse skillset, honed in both financial
                   services and web3 spaces, allows me to tackle any challenge.
                   <br></br> <br></br>
-                  Currently the CTO of my own co-founded start-up,{" "}
+                  I excel in the role of inspiring and leading teams of engineers tackle complex challenges with enthusiasm and efficiency. This was proven as I formulated and led a team of five to win the Polygon Public Good prize at {" "}
+                  <a
+                    className="section-link"
+                    href="https://ethglobal.com/"
+                    target="_blank"
+                  >
+                    EthGlobal
+                  </a>
+                  {" "} San Francisco 2022.
+                  <br></br> <br></br>
+                  Currently the CTO of of {" "}
                   <a
                     className="section-link"
                     href="https://www.betterverse.app/"
@@ -47,11 +57,7 @@ export const About = () => {
                   >
                     Betterverse
                   </a>
-                  , where I'm pushing the boundaries of what's possible in the
-                  web3 space by creating new incentives for charitable giving.
-                  <br></br> <br></br>I am driven to continuously push boundaries
-                  and create innovative solutions that make a real difference in
-                  the world.
+                  , a start-up I co-founded, I am utilizing my expertise to push the boundaries of what is possible in the web3 realm. Our focus is on creating new incentives for charitable giving, and I am committed to leading the charge in developing solutions that make a real difference in the world.
                   <br></br> <br></br>
                   Here are some technologies I've worked with:
                 </p>

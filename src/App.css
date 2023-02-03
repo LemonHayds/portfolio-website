@@ -207,7 +207,7 @@ p{
 
 /************ Navbar Css ************/
 nav.navbar {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -219,6 +219,7 @@ nav.navbar {
 
 @media (min-width: 768px) {
   nav.navbar {
+    position: fixed;
     padding: 10px 30px;
     background-color: #ffffff00;
   }
@@ -226,8 +227,7 @@ nav.navbar {
 
 
 nav.navbar.scrolled {
-  padding: 10px 30px;
-  top: -500px;
+  top: -300px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -414,11 +414,11 @@ nav.navbar .navbar-link-button:hover{
   font-size: 18vw;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 80%;
   display: block;
   color: yellow;
   text-align: center;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 @media (min-width: 700px) {
@@ -494,7 +494,7 @@ canvas{
   .banner h1 {
     font-size: 14vh;
     text-align: start;
-    line-height: 107px;
+    line-height: 80%;
   }
 
   .banner .banner-summary-container{
@@ -531,10 +531,6 @@ canvas{
   margin-bottom: 15px;
 }
 
-.about .section-summary .section-link{
-  font-size: 14px;
-}
-
 .about .skills-list{
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -560,8 +556,14 @@ canvas{
 .about .section-link{
   color: yellow;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .about .section-link{
+    font-size: 16px;
+  }
 }
 
 .about .section-link:hover{
