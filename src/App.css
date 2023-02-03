@@ -115,7 +115,7 @@ p, button, ul {
 li{
   font-family: FiraCodeLight;
   color:rgba(245, 245, 245, 0.808);
-  font-size: 13px;
+  font-size: 11px;
 }
 
 a {
@@ -176,8 +176,19 @@ li::marker{
 }
 
 .section-title{
-  font-size: 45px;
+  font-size: 35px;
   letter-spacing: 1px;
+}
+
+@media (min-width: 1200px) {
+  .section-title{
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+.section-summary{
+  font-size: 14px;
 }
 
 p{
@@ -188,6 +199,12 @@ p{
   font-family: Inter;
 }
 
+@media (min-width: 1200px) {
+  .section-summary{
+    font-size: 16px;
+  }
+}
+
 /************ Navbar Css ************/
 nav.navbar {
   position: fixed;
@@ -195,14 +212,22 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
-  padding: 20px 30px;
+  padding: 20px 20px;
   width: 100vw;
   background-color: #0c0f13;
 }
 
+@media (min-width: 768px) {
+  nav.navbar {
+    padding: 10px 30px;
+    background-color: #ffffff00;
+  }
+}
+
+
 nav.navbar.scrolled {
   padding: 10px 30px;
-  top: -100px;
+  top: -500px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -375,22 +400,32 @@ nav.navbar .navbar-link-button:hover{
 }
 
 .banner-container{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.banner-hidden{
+  visibility: hidden;
+}
+
 .banner h1 {
-  font-size: 45px;
+  height: auto;
+  font-size: 18vw;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
   display: block;
   color: yellow;
   text-align: center;
 }
 
+@media (min-width: 700px) {
+  .banner h1 {
+    font-size: 12vh;
+  }
+}
+ 
 .banner .banner-summary-container{
   display: flex;
   justify-content: center;
@@ -428,41 +463,46 @@ nav.navbar .navbar-link-button:hover{
         transform: translateY(-20px);
     }
 }
+.canvas{
+  pointer-events: none;
+}
 
 .canvas-container{
   height: 500px;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
   .banner-container{
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .banner h1 {
-    font-size: 75px;
-  }
-  
+ 
   .canvas-container { 
     height: 450px;
   }
 }
 
 @media (min-width: 1200px) {
-
-  .banner h1{
-    text-align: left;
-    font-size: 75px;
-
+  .banner h1 {
+    font-size: 14vh;
+    text-align: start;
+    line-height: 107px;
   }
 
   .banner .banner-summary-container{
-    justify-content: start;
+    justify-content: center;
   }
 
   .banner-container p{
-    text-align: left;
+    text-align: start;
+    width: 100%;
+    font-size: 1.5vh;
+  }
+
+  .canvas-container{
+    height: 700px;
   }
 
 }
@@ -473,7 +513,7 @@ nav.navbar .navbar-link-button:hover{
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .about .about-info-container{
@@ -485,14 +525,16 @@ nav.navbar .navbar-link-button:hover{
   margin-bottom: 15px;
 }
 
+.about .section-summary .section-link{
+  font-size: 14px;
+}
+
 .about .skills-list{
   display: grid;
-  grid-template-columns: repeat(3, minmax(140px, 200px));
+  grid-template-columns: repeat(2, minmax(140px, 200px));
   gap: 0px 10px;
   padding-left: 20px;
   margin: 0px 0px 0px;
-  list-style: none;
-  margin-left: -19px;
 }
 
 .about .skills-list li{
@@ -505,6 +547,7 @@ nav.navbar .navbar-link-button:hover{
 @media (min-width: 768px) {
   .about .skills-list{
     list-style: inside;
+    grid-template-columns: repeat(3, minmax(140px, 200px));
   }
 }
 
@@ -578,6 +621,13 @@ nav.navbar .navbar-link-button:hover{
   margin-right: 10px;
 }
 
+@media (min-width: 700px) {
+  .projects{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
 .projects .section-title{
   margin-bottom: 40px;
 }
@@ -589,24 +639,16 @@ nav.navbar .navbar-link-button:hover{
   margin-bottom: 60px;
 }
 
-.project-external span{
-  display: flex;  
+.project-card h1{
+  font-size: 25px;
 }
 
-.external-text-container{
-  display: flex;  
-  justify-content: center;
-  align-items: center;
+@media (min-width: 1200px) {
+  .project-card h1{
+    font-size: 35px;
+  }
 }
 
-.project-external .external-text{
-  font-family: FiraCodeLight;
-  color:rgba(245, 245, 245, 0.808);
-  font-size: 13px;
-  text-decoration: none;
-  margin-left: 5px;
-
-}
 
 .project-card .project-external{
   color: rgba(245, 245, 245, 0.619);
@@ -623,6 +665,14 @@ nav.navbar .navbar-link-button:hover{
     gap: 10px;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+  }
+
+  .right .section-summary{
+    text-align: end;
+  }
+
+  .right .title{
+    text-align: end;
   }
 }
 
@@ -652,14 +702,6 @@ nav.navbar .navbar-link-button:hover{
   padding-left: 0;
 }
 
-.right .section-summary{
-  text-align: start;
-}
-
-.right .title{
-  text-align: end;
-}
-
 .right .img-container{
   padding: 0.5em;
   position: relative;
@@ -670,10 +712,6 @@ nav.navbar .navbar-link-button:hover{
   width: auto;
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
-}
-
-.right .section-summary{
-  text-align: end;
 }
 
 .right ul{
@@ -728,7 +766,7 @@ nav.navbar .navbar-link-button:hover{
 
 /************ Contact Css ************/
 .contact{
-  height: 90vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -737,6 +775,12 @@ nav.navbar .navbar-link-button:hover{
 
 .contact-container{
   width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .contact-container{
+    width: 500px;
+  }
 }
 
 .contact-text{
@@ -777,6 +821,10 @@ nav.navbar .navbar-link-button:hover{
 
 .footer ul a{
   color: whitesmoke;
+}
+
+.footer ul a:hover{
+  color: yellow;
 }
 
 @media (min-width: 768px) {
