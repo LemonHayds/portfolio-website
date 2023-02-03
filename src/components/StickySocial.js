@@ -29,7 +29,7 @@ export const StickySocial = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/hayden.sherwood/" target="_blank">
+          <a href="https://www.instagram.com/lemonhayds/" target="_blank">
             <IconBrandInstagram />
           </a>
         </li>
