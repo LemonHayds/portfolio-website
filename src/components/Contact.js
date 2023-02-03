@@ -15,9 +15,9 @@ export const Contact = () => {
         <h1>Get In Touch</h1>
         <div className="contact-text">
           <p className="section-summary">
-            Always looking to get involved with projects that excite me, my
-            inbox is always open. Whether you have a question, need help with
-            building something amazing from scratch, or just want to say hi, hit
+            I am proactive in seeking out projects that ignite my passion and am always available to discuss new opportunities. 
+            Whether you have a question, need help with
+            building something amazing from scratch, or just want to connect, hit
             me up!
           </p>
         </div>

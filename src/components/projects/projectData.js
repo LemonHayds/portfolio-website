@@ -22,7 +22,7 @@ export default [
     img: project_truealtitude,
     projectName: "Investment Portal",
     projectSummary:
-      "The True Altitude Investment Portal was a web app created to faciliate meaninful and productive connections between mentors, investors and companies/start-ups within a closed network.",
+      "The True Altitude Investment Portal was a web app created to faciliate meaninful and productive connections between mentors, investors and companies/start-ups within a closed network. The main purpose was to provide better reporting and transparency of the journey of start-ups through a government funded accelerator.",
     tech: [
       { name: "VueJS" },
       { name: "SendGrid" },
