@@ -1,13 +1,11 @@
 import React, { useRef } from 'react'
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { useFrame } from '@react-three/fiber';
 
 export default function Lemon (props) {
 
     const ref = useRef();
     useFrame(() => (ref.current.rotation.y -= 0.006))
-
-
     const { nodes, materials } = useGLTF('/lemon.glb')
     return (
       <group {...props} dispose={null} scale={1.3}>

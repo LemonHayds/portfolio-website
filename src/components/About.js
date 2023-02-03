@@ -7,16 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const About = () => {
-  const [bannerTypeEnabled, setBannerTypeEnabled] = useState(true);
 
   useEffect(() => {
     AOS.init();
   }, []);
-
-  const handleDone = () => {
-    console.log(`Done !`);
-    setBannerTypeEnabled(false);
-  };
 
   return (
     <section className="about" id="about">
