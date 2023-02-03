@@ -22,7 +22,9 @@ export const Contact = () => {
           </p>
         </div>
         <Parallax speed={-0.01}>
-          <button>Say Hello</button>
+          <a href="mailto:hayden@lemonsqueasy.dev">
+            <button>Say Hello</button>
+          </a>
         </Parallax>
       </div>
     </section>
