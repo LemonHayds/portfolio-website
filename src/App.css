@@ -418,6 +418,7 @@ nav.navbar .navbar-link-button:hover{
   display: block;
   color: yellow;
   text-align: center;
+  margin-top: 40px;
 }
 
 @media (min-width: 700px) {
@@ -463,6 +464,11 @@ nav.navbar .navbar-link-button:hover{
         transform: translateY(-20px);
     }
 }
+
+canvas{
+  overflow : scroll;
+}
+
 .canvas{
   pointer-events: none;
 }
@@ -549,10 +555,6 @@ nav.navbar .navbar-link-button:hover{
     list-style: inside;
     grid-template-columns: repeat(3, minmax(140px, 200px));
   }
-}
-
-.about #box {
-  margin: 70px;
 }
 
 .about .section-link{

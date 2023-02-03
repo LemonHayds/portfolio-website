@@ -3,7 +3,6 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from '@react-three/fiber';
 
 export default function Lemon (props) {
-
     const ref = useRef();
     useFrame(() => (ref.current.rotation.y -= 0.006))
     const { nodes, materials } = useGLTF('/lemon.glb')
