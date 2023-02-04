@@ -49,7 +49,7 @@ export const About = () => {
                   </a>
                   {" "} San Francisco 2022.
                   <br></br> <br></br>
-                  Currently the CTO of of {" "}
+                  Currently the CTO of {" "}
                   <a
                     className="section-link"
                     href="https://www.betterverse.app/"
