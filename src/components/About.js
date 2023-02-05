@@ -52,7 +52,7 @@ export const About = () => {
                   Currently the CTO of {" "}
                   <a
                     className="section-link"
-                    href="https://www.betterverse.app/"
+                    href="https://www.betterverse.app"
                     target="_blank"
                   >
                     Betterverse
