@@ -66,7 +66,7 @@ export const About = () => {
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
-                  <li>ReactNative</li>
+                  <li>VueJS</li>
                   <li>TailwindCSS</li>
                   <li>NextJS</li>
                   <li>Node.js</li>
