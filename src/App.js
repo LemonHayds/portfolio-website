@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactGA from 'react-ga';
 import { NavBar } from "./components/NavBar";
 import { Introduction } from "./components/Introduction";
 import { About } from "./components/About";
