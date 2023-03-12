@@ -49,7 +49,7 @@ export const About = () => {
                   </a>
                   {" "} San Francisco 2022.
                   <br></br> <br></br>
-                  Currently the CTO of {" "}
+                  Currently working on {" "}
                   <a
                     className="section-link"
                     href="https://www.betterverse.app"
@@ -66,7 +66,7 @@ export const About = () => {
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
-                  <li>VueJS</li>
+                  <li>Vue.js</li>
                   <li>TailwindCSS</li>
                   <li>NextJS</li>
                   <li>Node.js</li>

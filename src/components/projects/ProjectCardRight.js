@@ -1,5 +1,5 @@
 import React from "react";
-import { IconExternalLink } from "@tabler/icons";
+import { IconExternalLink, IconVideo, IconBrandGithub } from "@tabler/icons";
 import Parallax from "react-rellax";
 
 const ProjectCardRight = (props) => {
@@ -27,14 +27,39 @@ const ProjectCardRight = (props) => {
               ))}
             </ul>
             <ul>
+            <div className="external-links">
+
               <a
-                title="Company Website"
+                title="Github Repository"
+                className="project-external"
+                href={props.githubURL}
+                target="_blank"
+                >
+                <IconBrandGithub />
+              </a>
+
+              { props.videoURL &&
+              <a
+                title="Video/Demo"
+                className="project-external"
+                href={props.videoURL}
+                target="_blank"
+              >
+                <IconVideo />
+              </a>
+              } 
+
+              { props.githubURL &&
+              <a
+                title="Company/Project Website"
                 className="project-external"
                 href={props.mainURL}
                 target="_blank"
               >
                 <IconExternalLink />
               </a>
+              }
+            </div>
             </ul>
           </div>
         </div>

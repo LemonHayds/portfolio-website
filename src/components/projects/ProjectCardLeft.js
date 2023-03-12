@@ -1,5 +1,5 @@
 import React from "react";
-import { IconExternalLink } from "@tabler/icons";
+import { IconExternalLink, IconVideo, IconBrandGithub } from "@tabler/icons";
 
 const ProjectCardLeft = (props) => {
   return (
@@ -21,14 +21,40 @@ const ProjectCardLeft = (props) => {
                 <li key={tech.name}>{tech.name}</li>
               ))}
             </ul>
-            <a
-              title="Company Website"
-              className="project-external"
-              href={props.mainURL}
-              target="_blank"
-            >
-              <IconExternalLink />
-            </a>
+            <div className="external-links">
+              <a
+                title="Company/Project Website"
+                className="project-external"
+                href={props.mainURL}
+                target="_blank"
+              >
+                <IconExternalLink />
+              </a>
+
+              { props.videoURL &&
+                <a
+                title="Video/Demo"
+                className="project-external"
+                href={props.videoURL}
+                target="_blank"
+                >
+                  <IconVideo />
+                </a>
+              }
+
+              { props.githubURL &&
+                <a
+                title="Github Repository"
+                className="project-external"
+                href={props.githubURL}
+                target="_blank"
+                >
+                  <IconBrandGithub />
+                </a>
+              }
+
+
+            </div>
           </div>
         </div>
       </div>

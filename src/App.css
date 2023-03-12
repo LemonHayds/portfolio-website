@@ -647,6 +647,10 @@ canvas{
   font-size: 25px;
 }
 
+.external-links a{
+  margin-left: 10px;
+}
+
 @media (min-width: 1200px) {
   .project-card h1{
     font-size: 35px;
@@ -753,7 +757,7 @@ canvas{
   margin-bottom: 0;
   padding: 1em;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 .project-card-grid ul{
