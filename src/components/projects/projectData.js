@@ -62,7 +62,7 @@ export default [
       { name: "Hardhat" },
       { name: "TailwindCSS" },
     ],
-    mainURL: "https:/novelgenie.xyz/",
+    mainURL: "https://www.novelgenie.xyz/",
     githubURL: "https://github.com/LemonHayds/novelgenie",
     videoURL: "https://youtu.be/8UhsM4DlHxY"
   },
