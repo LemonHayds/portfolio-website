@@ -94,7 +94,11 @@ export const Introduction = () => {
                       castShadow
                     />
                     <Lemon />
-                    <OrbitControls enableZoom={false} enableRotate={false} />
+                    <OrbitControls
+                      enableZoom={false}
+                      enableRotate={false}
+                      enablePan={false}
+                    />
                   </Suspense>
                 </Canvas>
               </div>
