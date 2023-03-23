@@ -18,7 +18,7 @@ export default [
     ],
     mainURL: "https://www.betterverse.app/",
     githubURL: "https://github.com/TheBetterverse/betterverse_app/tree/dev",
-    videoURL: "https://youtu.be/QgTKOCpItFg"
+    videoURL: "https://youtu.be/QgTKOCpItFg",
   },
   {
     img: project_truealtitude,
@@ -48,7 +48,7 @@ export default [
     ],
     mainURL: "https://www.simplicitygroup.xyz/",
     githubURL: "https://github.com/simplicity-group/simplicity-research-app",
-    videoURL: "https://youtu.be/J0zjQEtSTNc"
+    videoURL: "https://youtu.be/J0zjQEtSTNc",
   },
   {
     img: project_novelgenie,
@@ -64,6 +64,6 @@ export default [
     ],
     mainURL: "https://www.novelgenie.xyz/",
     githubURL: "https://github.com/LemonHayds/novelgenie",
-    videoURL: "https://youtu.be/8UhsM4DlHxY"
+    videoURL: "https://youtu.be/8UhsM4DlHxY",
   },
 ];
