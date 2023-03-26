@@ -2,6 +2,7 @@ import project_betterverse from "../../assets/img/project_betterverse.png";
 import project_truealtitude from "../../assets/img/project_investmentportal.png";
 import project_simplicity from "../../assets/img/project_simplicity.png";
 import project_novelgenie from "../../assets/img/project_novelgenie.png";
+import project_said from "../../assets/img/project_said.png";
 
 export default [
   {
@@ -65,5 +66,21 @@ export default [
     mainURL: "https://www.novelgenie.xyz/",
     githubURL: "https://github.com/LemonHayds/novelgenie",
     videoURL: "https://youtu.be/8UhsM4DlHxY",
+  },
+  {
+    img: project_said,
+    projectName: "sAId.fyi",
+    projectSummary:
+      "sAId.fyi (fullstack application) is a unique AI focused social platform with the purpose of allowing anyone to speak to OpenAI's 3.5 model, generate responses, make comments and share them with the world.",
+    tech: [
+      { name: "Next.js" },
+      { name: "Prisma" },
+      { name: "Postgres" },
+      { name: "Tanstack Query" },
+      { name: "TailwindCSS" },
+    ],
+    mainURL: "https://said.fyi/",
+    githubURL: "https://github.com/LemonHayds/sAId.fyi",
+    videoURL: "https://youtu.be/-662sAIh578",
   },
 ];

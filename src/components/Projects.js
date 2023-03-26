@@ -17,6 +17,19 @@ export const Projects = () => {
         <h2 className="section-title">Featured Projects</h2>
         <div>
           <div data-aos="fade-up">
+            <ProjectCardLeft
+              data-aos="fade-up"
+              img={projectData[4].img}
+              projectName={projectData[4].projectName}
+              projectSummary={projectData[4].projectSummary}
+              tech={projectData[4].tech}
+              mainURL={projectData[4].mainURL}
+              githubURL={projectData[4].githubURL}
+              videoURL={projectData[4].videoURL}
+            />
+          </div>
+
+          <div data-aos="fade-up">
             <ProjectCardRight
               img={projectData[0].img}
               projectName={projectData[0].projectName}
