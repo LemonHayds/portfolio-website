@@ -9,7 +9,7 @@ export default [
     img: project_betterverse,
     projectName: "Betterverse",
     projectSummary:
-      "At Betterverse the team and I have created a web3 donation app where users can donate to charitable causes they care about with stable coins and recieve a digital collectables (NFTs) that is represenation of their donation, with all the meaningful impact data connected. Currently in Closed Beta. ",
+      "At Betterverse the team and I have created a web3 donation app where users can donate to charitable causes they care about with stable coins and recieve a digital collectables (NFTs) that is represenation of their donation, with all the meaningful impact data connected. ",
     tech: [
       { name: "Vue.js" },
       { name: "Alchemy" },

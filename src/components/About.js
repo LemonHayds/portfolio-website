@@ -7,7 +7,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const About = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -38,28 +37,28 @@ export const About = () => {
                   track record of turning complex problems into innovative
                   solutions. My diverse skillset, honed in both financial
                   services and web3 spaces, allows me to tackle any challenge.
-                  <br></br> <br></br>
-                  I excel in the role of inspiring and leading teams of engineers tackle complex challenges with enthusiasm and efficiency. This was proven as I formulated and led a team of five to win the Polygon Public Good prize at {" "}
+                  <br></br> <br></br>I excel in the role of inspiring and
+                  leading teams of engineers tackle complex challenges with
+                  enthusiasm and efficiency. This was proven as I formulated and
+                  led a team of five to win the Polygon Public Good prize at{" "}
                   <a
                     className="section-link"
                     href="https://ethglobal.com/"
                     target="_blank"
                   >
                     EthGlobal
-                  </a>
-                  {" "} San Francisco 2022.
+                  </a>{" "}
+                  San Francisco 2022.
                   <br></br> <br></br>
-                  Currently working on {" "}
+                  Currently working as a Web Developer at{" "}
                   <a
                     className="section-link"
-                    href="https://www.betterverse.app"
+                    href="https://intent.uk/"
                     target="_blank"
                   >
-                    Betterverse
+                    Intent
                   </a>
-                  , a start-up I co-founded, I am utilizing my expertise to push the boundaries of what is possible in the web3 realm. Our focus is on creating new incentives for charitable giving, and I am committed to leading the charge in developing solutions that make a real difference in the world.
-                  <br></br> <br></br>
-                  Here are some technologies I've worked with:
+                  .<br></br> Here are some technologies I've worked with:
                 </p>
                 <ul className="skills-list">
                   <li>HTML</li>
