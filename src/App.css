@@ -1,60 +1,57 @@
 /************ Custom Font ************/
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-	font-family: Inter;
-	src: url('./assets/font/Inter/Inter-Bold.ttf');
-	font-weight: 700;
+  font-family: Inter;
+  src: url("./assets/font/Inter/Inter-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Inter;
-	src: url('./assets/font/Inter/Inter-Regular.ttf');
-	font-weight: 500;
+  font-family: Inter;
+  src: url("./assets/font/Inter/Inter-Regular.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Inter;
-	src: url('./assets/font/Inter/Inter-Thin.ttf');
-	font-weight: 400;
+  font-family: Inter;
+  src: url("./assets/font/Inter/Inter-Thin.ttf");
+  font-weight: 400;
 }
 
-
 @font-face {
-	font-family: FiraCode;
-	src: url('./assets/font/Fira/FiraCode-Bold.ttf');
-	font-weight: 700;
+  font-family: FiraCode;
+  src: url("./assets/font/Fira/FiraCode-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: FiraCode;
-	src: url('./assets/font/Fira/FiraCode-Regular.ttf');
-	font-weight: 500;
+  font-family: FiraCode;
+  src: url("./assets/font/Fira/FiraCode-Regular.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: FiraCodeLight;
-	src: url('./assets/font/Fira/FiraCode-Light.ttf');
-	font-weight: 400;
+  font-family: FiraCodeLight;
+  src: url("./assets/font/Fira/FiraCode-Light.ttf");
+  font-weight: 400;
 }
-
 
 @font-face {
-	font-family: LemonLove;
-	src: url(./assets/font/Lemon-Love.ttf);
-	font-weight: 700;
+  font-family: LemonLove;
+  src: url(./assets/font/Lemon-Love.ttf);
+  font-weight: 700;
 }
-
 
 /************ Default Css ************/
 
@@ -74,7 +71,6 @@
   border-radius: 10px;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -91,35 +87,43 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #0c0f13 !important;
-  
+
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: "Centra", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-  font-family: 'LemonLove';
+  font-family: "LemonLove";
   color: yellow;
-  }
+}
 
-p, button, ul {
+p,
+button,
+ul {
   margin: 0;
   padding: 0;
   line-height: normal;
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: "Inter";
+  font-weight: 500;
 }
 
-li{
+li {
   font-family: FiraCodeLight;
-  color:rgba(245, 245, 245, 0.808);
+  color: rgba(245, 245, 245, 0.808);
   font-size: 11px;
 }
 
 a {
-  font-family: 'FiraCode';
+  font-family: "FiraCode";
   line-height: normal;
   margin: 0;
   padding: 0;
@@ -152,46 +156,48 @@ button:hover {
   background-color: rgba(255, 255, 0, 0.1);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
 }
 
 p.success {
-	color: green;
+  color: green;
 }
 
 p.danger {
-	color: red;
+  color: red;
 }
 
-li::marker{
+li::marker {
   color: yellow !important; /* Blue */
 }
 
-.section-title{
+.section-title {
   font-size: 35px;
   letter-spacing: 1px;
 }
 
 @media (min-width: 1200px) {
-  .section-title{
+  .section-title {
     font-size: 40px;
     letter-spacing: 1px;
   }
 }
 
-.section-summary{
+.section-summary {
   font-size: 14px;
 }
 
-p{
+p {
   color: rgb(255, 255, 255);
   font-size: 16px;
   letter-spacing: 1px;
@@ -200,7 +206,7 @@ p{
 }
 
 @media (min-width: 1200px) {
-  .section-summary{
+  .section-summary {
     font-size: 16px;
   }
 }
@@ -211,7 +217,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
   padding: 20px 20px;
   width: 100vw;
   background-color: #0c0f13;
@@ -224,7 +230,6 @@ nav.navbar {
     background-color: #ffffff00;
   }
 }
-
 
 nav.navbar.scrolled {
   top: -300px;
@@ -253,7 +258,7 @@ span.navbar-text {
 
 .navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
-	outline: none;
+  outline: none;
   box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
@@ -266,38 +271,38 @@ nav.navbar .navbar-toggler-icon {
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
-	width: 24px;
-	position: absolute;
-	height: 2px;
-	background-color: #fff;
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-	transition: all 300ms linear;
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
 }
 nav.navbar .navbar-toggler-icon:after {
-	top: 8px;
+  top: 8px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-	background-color: #fff;
-	height: 2px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
-	height: 2px;
+  transform: translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+  border-color: transparent;
 }
 
-nav.navbar .navbar-link-button{
+nav.navbar .navbar-link-button {
   color: yellow;
   background-color: transparent;
   border: 1px solid yellow;
@@ -309,22 +314,22 @@ nav.navbar .navbar-link-button{
   padding: 12px 25px;
 }
 
-nav.navbar .navbar-link-button:hover{
+nav.navbar .navbar-link-button:hover {
   background-color: rgba(255, 255, 0, 0.1);
 }
 
-.navbar-nav a{
+.navbar-nav a {
   margin: 10px;
 }
 
-.navbar-link-container{
+.navbar-link-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /************ Sticky ************/
-.sticky-left{
+.sticky-left {
   position: fixed;
   width: 5%;
   left: 0;
@@ -339,21 +344,21 @@ nav.navbar .navbar-link-button:hover{
   padding-left: 0;
 }
 
-.sticky-left ul li{
+.sticky-left ul li {
   margin-bottom: 20px;
   color: whitesmoke;
 }
 
-.sticky-left ul a{
+.sticky-left ul a {
   color: whitesmoke;
   text-decoration: none;
 }
 
-.sticky-left ul a:hover{
+.sticky-left ul a:hover {
   color: yellow;
 }
 
-.sticky-right{
+.sticky-right {
   position: fixed;
   width: 5%;
   bottom: 0;
@@ -369,7 +374,7 @@ nav.navbar .navbar-link-button:hover{
   margin-bottom: 0;
 }
 
-.sticky-right ul a{
+.sticky-right ul a {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   text-decoration: none;
@@ -378,15 +383,15 @@ nav.navbar .navbar-link-button:hover{
   font-size: 12px;
   letter-spacing: 3px;
 }
-.sticky-right ul a:hover{
+.sticky-right ul a:hover {
   color: yellow;
 }
 
 @media (min-width: 768px) {
-  .sticky-right { 
+  .sticky-right {
     display: block;
   }
-  .sticky-left { 
+  .sticky-left {
     display: block;
   }
 }
@@ -396,16 +401,16 @@ nav.navbar .navbar-link-button:hover{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.banner-container{
+.banner-container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.banner-hidden{
+.banner-hidden {
   visibility: hidden;
 }
 
@@ -426,14 +431,14 @@ nav.navbar .navbar-link-button:hover{
     font-size: 12vh;
   }
 }
- 
-.banner .banner-summary-container{
+
+.banner .banner-summary-container {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.banner-container p{
+.banner-container p {
   text-align: center;
   width: 80%;
   font-family: FiraCodeLight;
@@ -454,38 +459,38 @@ nav.navbar .navbar-link-button:hover{
 }
 
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
-canvas{
-  overflow : scroll;
+canvas {
+  overflow: scroll;
 }
 
-.canvas{
+.canvas {
   pointer-events: none;
 }
 
-.canvas-container{
+.canvas-container {
   height: 500px;
   pointer-events: none;
 }
 
 @media (min-width: 768px) {
-  .banner-container{
+  .banner-container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
- 
-  .canvas-container { 
+
+  .canvas-container {
     height: 450px;
   }
 }
@@ -497,20 +502,19 @@ canvas{
     line-height: 80%;
   }
 
-  .banner .banner-summary-container{
+  .banner .banner-summary-container {
     justify-content: center;
   }
 
-  .banner-container p{
+  .banner-container p {
     text-align: start;
     width: 100%;
     font-size: 1.5vh;
   }
 
-  .canvas-container{
+  .canvas-container {
     height: 700px;
   }
-
 }
 
 /************ About Css ************/
@@ -518,20 +522,20 @@ canvas{
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 100px;
 }
 
-.about .about-info-container{
+.about .about-info-container {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.about .section-title{
+.about .section-title {
   margin-bottom: 15px;
 }
 
-.about .skills-list{
+.about .skills-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   gap: 0px 10px;
@@ -539,21 +543,21 @@ canvas{
   margin: 0px 0px 0px;
 }
 
-.about .skills-list li{
+.about .skills-list li {
   font-family: FiraCodeLight;
-  color:rgba(245, 245, 245, 0.808);
+  color: rgba(245, 245, 245, 0.808);
   font-size: 13px;
   line-height: 25px;
 }
 
 @media (min-width: 768px) {
-  .about .skills-list{
+  .about .skills-list {
     list-style: inside;
     grid-template-columns: repeat(3, minmax(140px, 200px));
   }
 }
 
-.about .section-link{
+.about .section-link {
   color: yellow;
   letter-spacing: 1px;
   font-size: 14px;
@@ -561,35 +565,35 @@ canvas{
 }
 
 @media (min-width: 1200px) {
-  .about .section-link{
+  .about .section-link {
     font-size: 16px;
   }
 }
 
-.about .section-link:hover{
+.about .section-link:hover {
   text-decoration: underline;
 }
 
-.about img{
+.about img {
   border-radius: var(--borderWidth);
 }
 
-.about .headshot-container{
+.about .headshot-container {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.about .headshot-border{
+.about .headshot-border {
   --borderWidth: 3px;
-  background: #1D1F20;
+  background: #1d1f20;
   position: relative;
   border-radius: var(--borderWidth);
   width: 300px;
 }
 
-.about .headshot-border:after{
-  content: '';
+.about .headshot-border:after {
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
@@ -603,20 +607,19 @@ canvas{
 }
 
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
 /************ Projects Css ************/
-.projects{
+.projects {
   height: auto;
   display: flex;
   justify-content: center;
@@ -626,48 +629,46 @@ canvas{
 }
 
 @media (min-width: 700px) {
-  .projects{
+  .projects {
     margin-left: 60px;
     margin-right: 60px;
   }
 }
 
-.projects .section-title{
+.projects .section-title {
   margin-bottom: 40px;
 }
 
-
 /************ Project Card Css ************/
 
-.project-card-grid{
+.project-card-grid {
   margin-bottom: 60px;
 }
 
-.project-card h1{
+.project-card h1 {
   font-size: 25px;
 }
 
-.external-links a{
+.external-links a {
   margin-left: 10px;
 }
 
 @media (min-width: 1200px) {
-  .project-card h1{
+  .project-card h1 {
     font-size: 35px;
   }
 }
 
-
-.project-card .project-external{
+.project-card .project-external {
   color: rgba(245, 245, 245, 0.619);
 }
 
-.project-card .project-external:hover{
+.project-card .project-external:hover {
   color: yellow;
 }
 
 @media (min-width: 1100px) {
-  .project-card-grid{
+  .project-card-grid {
     position: relative;
     display: grid;
     gap: 10px;
@@ -675,62 +676,62 @@ canvas{
     align-items: center;
   }
 
-  .right .section-summary{
+  .right .section-summary {
     text-align: end;
   }
 
-  .right .title{
+  .right .title {
     text-align: end;
   }
 }
 
-.project-card-grid .img-container img{
+.project-card-grid .img-container img {
   border-radius: 4px;
   width: 100%;
-  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
-.left .title{
+.left .title {
   text-align: start;
 }
 
-.left .img-container{
+.left .img-container {
   padding: 0.5em;
   position: relative;
   grid-area: 1 / 6 / -1 / -1;
-}  
+}
 
-.left .info-container{
+.left .info-container {
   width: auto;
   grid-area: 1 / 1 / -1 / 7;
   position: relative;
 }
 
-.left ul{
+.left ul {
   padding-left: 0;
 }
 
-.right .img-container{
+.right .img-container {
   padding: 0.5em;
   position: relative;
   grid-area: 1 / 1 / -1 / 7;
-}  
+}
 
-.right .info-container{
+.right .info-container {
   width: auto;
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
 }
 
-.right ul{
+.right ul {
   text-align: end;
 }
 
-.project-card-grid .content{
+.project-card-grid .content {
   margin: auto;
 }
 
-.project-card .summary-container{
+.project-card .summary-container {
   border-radius: 6px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   font-size: 2rem;
@@ -741,16 +742,16 @@ canvas{
   margin-bottom: 20px;
 }
 
-.project-card-grid .summary-container:before{
+.project-card-grid .summary-container:before {
   background-color: #28364b45;
   backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(40%);
-  content: '';
+  content: "";
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.project-card-grid .section-summary{
+.project-card-grid .section-summary {
   color: white;
   width: 100%;
   height: 100%;
@@ -760,59 +761,58 @@ canvas{
   z-index: 5;
 }
 
-.project-card-grid ul{
+.project-card-grid ul {
   list-style: none;
   margin-top: 15px;
-  color:rgba(245, 245, 245, 0.808);
+  color: rgba(245, 245, 245, 0.808);
 }
 
-.project-card-grid li{
+.project-card-grid li {
   display: inline;
   margin: 7px;
 }
 
-
 /************ Contact Css ************/
-.contact{
+.contact {
   height: 75vh;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 
-.contact-container{
+.contact-container {
   width: 300px;
 }
 
 @media (min-width: 1200px) {
-  .contact-container{
+  .contact-container {
     width: 500px;
   }
 }
 
-.contact-text{
+.contact-text {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.contact-container button{
+.contact-container button {
   padding-left: 20px;
   padding-right: 20px;
 }
 
 /************ Footer Css ************/
-.footer{
+.footer {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.footer ul{
+.footer ul {
   list-style: none;
   padding-left: 0;
   display: grid;
@@ -823,20 +823,20 @@ canvas{
   color: whitesmoke;
 }
 
-.footer ul li{
+.footer ul li {
   text-align: center;
 }
 
-.footer ul a{
+.footer ul a {
   color: whitesmoke;
 }
 
-.footer ul a:hover{
+.footer ul a:hover {
   color: yellow;
 }
 
 @media (min-width: 768px) {
-  .footer { 
+  .footer {
     display: none;
   }
 }

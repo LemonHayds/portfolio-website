@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import me from "../assets/img/me.jpg";
 import "animate.css";
@@ -33,7 +33,7 @@ export const About = () => {
                 <h2 className="section-title">About me</h2>
                 <p className="section-summary">
                   Fueled by a burning passion for innovation and
-                  entrepreneurship, I am a visionary technologist with a proven
+                  entrepreneurship, I am a confident technologist with a proven
                   track record of turning complex problems into innovative
                   solutions. My diverse skillset, honed in both financial
                   services and web3 spaces, allows me to tackle any challenge.
@@ -50,7 +50,7 @@ export const About = () => {
                   </a>{" "}
                   San Francisco 2022.
                   <br></br> <br></br>
-                  Currently working as a Web Developer at{" "}
+                  Currently working as a Fullstack Developer at{" "}
                   <a
                     className="section-link"
                     href="https://intent.uk/"
@@ -63,15 +63,15 @@ export const About = () => {
                 <ul className="skills-list">
                   <li>HTML</li>
                   <li>CSS</li>
-                  <li>JavaScript</li>
+                  <li>Javascript</li>
+                  <li>Typescript</li>
                   <li>React</li>
-                  <li>Vue.js</li>
                   <li>TailwindCSS</li>
                   <li>NextJS</li>
-                  <li>Node.js</li>
-                  <li>web3.js</li>
+                  <li>NestJS</li>
+                  <li>Node</li>
+                  <li>GraphQL</li>
                   <li>Solidity</li>
-                  <li>C-Sharp</li>
                   <li>Firebase</li>
                   <li>Figma</li>
                   <li>Webflow</li>
